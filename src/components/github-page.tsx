@@ -25,6 +25,7 @@ export function GitHubPage() {
   const totalSlides = 3
 
   // Refs for GSAP animations
+  const heroRef = useRef<HTMLElement>(null)
   const statsRef = useRef<HTMLElement>(null)
   const branchesRef = useRef<HTMLElement>(null)
   const progressRef = useRef<HTMLElement>(null)
@@ -45,6 +46,19 @@ export function GitHubPage() {
 
   // GSAP animations setup
   useEffect(() => {
+    // Hero section animation
+    if (heroRef.current) {
+      gsap.fromTo(heroRef.current.children, 
+        { y: 60, opacity: 0 },
+        { 
+          y: 0, 
+          opacity: 1, 
+          duration: 1.2, 
+          stagger: 0.2,
+          ease: "power3.out"
+        }
+      )
+    }
 
     // Stats section animation
     if (statsRef.current) {
@@ -150,7 +164,7 @@ export function GitHubPage() {
   return (
     <main>
         {/* Header Section */}
-        <section className="wrap sp-xl pt-40">
+        <section ref={heroRef} className="wrap sp-xl pt-40">
           <div className="subtle">Source Code</div>
           <h1 className="title" style={{fontSize: 'clamp(40px,6vw,72px)'}}>
             GitHub Repository

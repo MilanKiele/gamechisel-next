@@ -50,14 +50,17 @@ export default function Footer() {
           <div>
             <h5 className="text-sm uppercase tracking-wider text-muted-foreground mb-2.5 font-semibold">Platform</h5>
             <div className="space-y-2">
-              <a href="/github" className="block text-foreground hover:text-accent transition-colors py-2 relative after:content-[''] after:absolute after:left-0 after:bottom-1 after:h-0.5 after:w-0 after:bg-accent after:transition-all after:duration-300 hover:after:w-full">
-                GitHub Repository
-              </a>
-              <a href="/team" className="block text-foreground hover:text-accent transition-colors py-2 relative after:content-[''] after:absolute after:left-0 after:bottom-1 after:h-0.5 after:w-0 after:bg-accent after:transition-all after:duration-300 hover:after:w-full">
-                Team
+              <a href="/" className="block text-foreground hover:text-accent transition-colors py-2 relative after:content-[''] after:absolute after:left-0 after:bottom-1 after:h-0.5 after:w-0 after:bg-accent after:transition-all after:duration-300 hover:after:w-full">
+                Home
               </a>
               <a href="/download" className="block text-foreground hover:text-accent transition-colors py-2 relative after:content-[''] after:absolute after:left-0 after:bottom-1 after:h-0.5 after:w-0 after:bg-accent after:transition-all after:duration-300 hover:after:w-full">
                 Download
+              </a>
+              <a href="/github" className="block text-foreground hover:text-accent transition-colors py-2 relative after:content-[''] after:absolute after:left-0 after:bottom-1 after:h-0.5 after:w-0 after:bg-accent after:transition-all after:duration-300 hover:after:w-full">
+                Source Code
+              </a>
+              <a href="/team" className="block text-foreground hover:text-accent transition-colors py-2 relative after:content-[''] after:absolute after:left-0 after:bottom-1 after:h-0.5 after:w-0 after:bg-accent after:transition-all after:duration-300 hover:after:w-full">
+                Team
               </a>
             </div>
           </div>
@@ -73,19 +76,25 @@ export default function Footer() {
               <a href="https://github.com/gamechisel/gamechisel/issues" target="_blank" rel="noopener noreferrer" className="block text-foreground hover:text-accent transition-colors py-2 relative after:content-[''] after:absolute after:left-0 after:bottom-1 after:h-0.5 after:w-0 after:bg-accent after:transition-all after:duration-300 hover:after:w-full">
                 Report Issues
               </a>
+              <a href="https://github.com/gamechisel/gamechisel/wiki" target="_blank" rel="noopener noreferrer" className="block text-foreground hover:text-accent transition-colors py-2 relative after:content-[''] after:absolute after:left-0 after:bottom-1 after:h-0.5 after:w-0 after:bg-accent after:transition-all after:duration-300 hover:after:w-full">
+                Documentation
+              </a>
             </div>
           </div>
           <div>
             <h5 className="text-sm uppercase tracking-wider text-muted-foreground mb-2.5 font-semibold">Support</h5>
             <div className="space-y-2">
-              <a href="https://github.com/gamechisel/gamechisel/wiki" target="_blank" rel="noopener noreferrer" className="block text-foreground hover:text-accent transition-colors py-2 relative after:content-[''] after:absolute after:left-0 after:bottom-1 after:h-0.5 after:w-0 after:bg-accent after:transition-all after:duration-300 hover:after:w-full">
-                Documentation
+              <a href="mailto:mail@gamechisel.net" className="block text-foreground hover:text-accent transition-colors py-2 relative after:content-[''] after:absolute after:left-0 after:bottom-1 after:h-0.5 after:w-0 after:bg-accent after:transition-all after:duration-300 hover:after:w-full">
+                Contact Us
               </a>
-              <a href="mailto:support@gamechisel.com" className="block text-foreground hover:text-accent transition-colors py-2 relative after:content-[''] after:absolute after:left-0 after:bottom-1 after:h-0.5 after:w-0 after:bg-accent after:transition-all after:duration-300 hover:after:w-full">
-                Contact
+              <a href="/contact" className="block text-foreground hover:text-accent transition-colors py-2 relative after:content-[''] after:absolute after:left-0 after:bottom-1 after:h-0.5 after:w-0 after:bg-accent after:transition-all after:duration-300 hover:after:w-full">
+                Contact Page
               </a>
               <a href="/license" className="block text-foreground hover:text-accent transition-colors py-2 relative after:content-[''] after:absolute after:left-0 after:bottom-1 after:h-0.5 after:w-0 after:bg-accent after:transition-all after:duration-300 hover:after:w-full">
                 License
+              </a>
+              <a href="/privacy" className="block text-foreground hover:text-accent transition-colors py-2 relative after:content-[''] after:absolute after:left-0 after:bottom-1 after:h-0.5 after:w-0 after:bg-accent after:transition-all after:duration-300 hover:after:w-full">
+                Privacy Policy
               </a>
             </div>
           </div>
