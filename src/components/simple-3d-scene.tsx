@@ -104,7 +104,7 @@ function StarWarsParticles() {
     return { positions, colors }
   }, [isDarkMode])
   
-  useFrame((state) => {
+  useFrame(() => {
     if (!meshRef.current) return
     
     timeRef.current += 0.003
@@ -167,7 +167,7 @@ function SimpleModel() {
     return () => window.removeEventListener('resize', updateScreenSize)
   }, [])
   
-  useFrame((state) => {
+  useFrame(() => {
     if (!meshRef.current) return
     
     timeRef.current += 0.01

@@ -1,5 +1,6 @@
 "use client"
 
+import Link from "next/link"
 import { Github, Linkedin, Twitter, Mail } from "lucide-react"
 
 export default function Footer() {
@@ -50,18 +51,18 @@ export default function Footer() {
           <div>
             <h5 className="text-sm uppercase tracking-wider text-muted-foreground mb-2.5 font-semibold">Platform</h5>
             <div className="space-y-2">
-              <a href="/" className="block text-foreground hover:text-accent transition-colors py-2 relative after:content-[''] after:absolute after:left-0 after:bottom-1 after:h-0.5 after:w-0 after:bg-accent after:transition-all after:duration-300 hover:after:w-full">
+              <Link href="/" className="block text-foreground hover:text-accent transition-colors py-2 relative after:content-[''] after:absolute after:left-0 after:bottom-1 after:h-0.5 after:w-0 after:bg-accent after:transition-all after:duration-300 hover:after:w-full">
                 Home
-              </a>
-              <a href="/download" className="block text-foreground hover:text-accent transition-colors py-2 relative after:content-[''] after:absolute after:left-0 after:bottom-1 after:h-0.5 after:w-0 after:bg-accent after:transition-all after:duration-300 hover:after:w-full">
+              </Link>
+              <Link href="/download" className="block text-foreground hover:text-accent transition-colors py-2 relative after:content-[''] after:absolute after:left-0 after:bottom-1 after:h-0.5 after:w-0 after:bg-accent after:transition-all after:duration-300 hover:after:w-full">
                 Download
-              </a>
-              <a href="/github" className="block text-foreground hover:text-accent transition-colors py-2 relative after:content-[''] after:absolute after:left-0 after:bottom-1 after:h-0.5 after:w-0 after:bg-accent after:transition-all after:duration-300 hover:after:w-full">
+              </Link>
+              <Link href="/github" className="block text-foreground hover:text-accent transition-colors py-2 relative after:content-[''] after:absolute after:left-0 after:bottom-1 after:h-0.5 after:w-0 after:bg-accent after:transition-all after:duration-300 hover:after:w-full">
                 Source Code
-              </a>
-              <a href="/team" className="block text-foreground hover:text-accent transition-colors py-2 relative after:content-[''] after:absolute after:left-0 after:bottom-1 after:h-0.5 after:w-0 after:bg-accent after:transition-all after:duration-300 hover:after:w-full">
+              </Link>
+              <Link href="/team" className="block text-foreground hover:text-accent transition-colors py-2 relative after:content-[''] after:absolute after:left-0 after:bottom-1 after:h-0.5 after:w-0 after:bg-accent after:transition-all after:duration-300 hover:after:w-full">
                 Team
-              </a>
+              </Link>
             </div>
           </div>
           <div>
@@ -87,15 +88,15 @@ export default function Footer() {
               <a href="mailto:mail@gamechisel.net" className="block text-foreground hover:text-accent transition-colors py-2 relative after:content-[''] after:absolute after:left-0 after:bottom-1 after:h-0.5 after:w-0 after:bg-accent after:transition-all after:duration-300 hover:after:w-full">
                 Contact Us
               </a>
-              <a href="/contact" className="block text-foreground hover:text-accent transition-colors py-2 relative after:content-[''] after:absolute after:left-0 after:bottom-1 after:h-0.5 after:w-0 after:bg-accent after:transition-all after:duration-300 hover:after:w-full">
+              <Link href="/contact" className="block text-foreground hover:text-accent transition-colors py-2 relative after:content-[''] after:absolute after:left-0 after:bottom-1 after:h-0.5 after:w-0 after:bg-accent after:transition-all after:duration-300 hover:after:w-full">
                 Contact Page
-              </a>
-              <a href="/license" className="block text-foreground hover:text-accent transition-colors py-2 relative after:content-[''] after:absolute after:left-0 after:bottom-1 after:h-0.5 after:w-0 after:bg-accent after:transition-all after:duration-300 hover:after:w-full">
+              </Link>
+              <Link href="/license" className="block text-foreground hover:text-accent transition-colors py-2 relative after:content-[''] after:absolute after:left-0 after:bottom-1 after:h-0.5 after:w-0 after:bg-accent after:transition-all after:duration-300 hover:after:w-full">
                 License
-              </a>
-              <a href="/privacy" className="block text-foreground hover:text-accent transition-colors py-2 relative after:content-[''] after:absolute after:left-0 after:bottom-1 after:h-0.5 after:w-0 after:bg-accent after:transition-all after:duration-300 hover:after:w-full">
+              </Link>
+              <Link href="/privacy" className="block text-foreground hover:text-accent transition-colors py-2 relative after:content-[''] after:absolute after:left-0 after:bottom-1 after:h-0.5 after:w-0 after:bg-accent after:transition-all after:duration-300 hover:after:w-full">
                 Privacy Policy
-              </a>
+              </Link>
             </div>
           </div>
         </div>
@@ -107,18 +108,18 @@ export default function Footer() {
               © {new Date().getFullYear()} GameChisel. All rights reserved.
             </p>
             <div className="flex items-center gap-6">
-              <a 
+              <Link 
                 href="/privacy" 
                 className="text-sm text-muted-foreground hover:text-accent transition-colors"
               >
                 Privacy Policy
-              </a>
-              <a 
+              </Link>
+              <Link 
                 href="/terms" 
                 className="text-sm text-muted-foreground hover:text-accent transition-colors"
               >
                 Terms of Service
-              </a>
+              </Link>
             </div>
           </div>
         </div>

@@ -18,12 +18,6 @@ import { ScrollTrigger } from "gsap/ScrollTrigger"
 gsap.registerPlugin(ScrollTrigger)
 
 export function GitHubPage() {
-  const [currentSlide, setCurrentSlide] = useState(0)
-  const [canScrollLeft, setCanScrollLeft] = useState(false)
-  const [canScrollRight, setCanScrollRight] = useState(true)
-  const carouselRef = useRef<HTMLDivElement>(null)
-  const totalSlides = 3
-
   // Refs for GSAP animations
   const heroRef = useRef<HTMLElement>(null)
   const statsRef = useRef<HTMLElement>(null)
@@ -31,18 +25,6 @@ export function GitHubPage() {
   const progressRef = useRef<HTMLElement>(null)
   const commitsRef = useRef<HTMLElement>(null)
   const statsRefs = useRef<(HTMLDivElement | null)[]>([])
-
-  // Carousel scroll functions
-  const scrollCarousel = (direction: 'left' | 'right') => {
-    if (!carouselRef.current) return
-    
-    const newSlide = direction === 'left' ? currentSlide - 1 : currentSlide + 1
-    if (newSlide >= 0 && newSlide < totalSlides) {
-      setCurrentSlide(newSlide)
-      setCanScrollLeft(newSlide > 0)
-      setCanScrollRight(newSlide < totalSlides - 1)
-    }
-  }
 
   // GSAP animations setup
   useEffect(() => {

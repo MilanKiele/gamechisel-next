@@ -81,7 +81,7 @@ const mockModels = [
 const categories = ["All", "Vehicles", "Architecture", "Weapons", "Characters", "Environment", "Props"]
 
 export function CollectionPage() {
-  const [models, setModels] = useState(mockModels)
+  const [models] = useState(mockModels)
   const [searchTerm, setSearchTerm] = useState("")
   const [selectedCategory, setSelectedCategory] = useState("All")
   const [viewMode, setViewMode] = useState<"grid" | "list">("grid")

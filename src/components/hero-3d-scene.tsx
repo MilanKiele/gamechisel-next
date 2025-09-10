@@ -1,11 +1,10 @@
 "use client"
 
-import React, { useRef, useMemo, Suspense, useEffect, useState } from 'react'
+import React, { useRef, Suspense, useEffect, useState } from 'react'
 import { Canvas, useFrame } from '@react-three/fiber'
 import { useGLTF, Environment, Float, Trail, Sphere } from '@react-three/drei'
 import { Group, Vector3, Material } from 'three'
 import * as THREE from 'three'
-import { gsap } from 'gsap'
 
 interface MaterialWithOpacity extends Material {
   opacity: number

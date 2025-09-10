@@ -86,15 +86,13 @@ const ListItem = React.forwardRef<
 ListItem.displayName = "ListItem"
 
 export default function Navigation({ 
-  variant = 'landing',
-  transparentPages = ['/']
+  variant = 'landing'
 }: NavigationProps) {
   const [isOpen, setIsOpen] = React.useState(false)
   const [isNavVisible, setIsNavVisible] = React.useState(true)
   const [scrollOpacity, setScrollOpacity] = React.useState(0)
   const [mounted, setMounted] = React.useState(false)
   const [openMobileMenu, setOpenMobileMenu] = React.useState<string | null>(null)
-  const [currentPath, setCurrentPath] = React.useState('/')
   const lastScrollY = React.useRef(0)
   
   // Refs for GSAP animations

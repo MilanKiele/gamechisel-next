@@ -129,23 +129,6 @@ export function DownloadPage() {
     }
   }
 
-  const exportGameData = () => {
-    const data = {
-      gameInfo,
-      exportDate: new Date().toISOString(),
-      exportedBy: "GameChisel Download Page"
-    }
-    
-    const blob = new Blob([JSON.stringify(data, null, 2)], { type: 'application/json' })
-    const url = URL.createObjectURL(blob)
-    const a = document.createElement('a')
-    a.href = url
-    a.download = `gamechisel-info-${new Date().toISOString().split('T')[0]}.json`
-    document.body.appendChild(a)
-    a.click()
-    document.body.removeChild(a)
-    URL.revokeObjectURL(url)
-  }
 
   // GSAP animations setup
   useEffect(() => {

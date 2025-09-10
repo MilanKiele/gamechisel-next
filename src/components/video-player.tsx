@@ -10,7 +10,6 @@ interface VideoPlayerProps {
 }
 
 export default function VideoPlayer({ videoId, startTime = 0, onClose }: VideoPlayerProps) {
-  const [isLoaded, setIsLoaded] = useState(false)
 
   const videoUrl = `https://www.youtube.com/embed/${videoId}?autoplay=1&start=${startTime}&rel=0&modestbranding=1`
 

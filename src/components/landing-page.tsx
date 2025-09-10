@@ -213,7 +213,7 @@ export function LandingPage() {
     }
 
     // Statistics bars animation
-    statsRefs.current.forEach((ref, index) => {
+    statsRefs.current.forEach((ref) => {
       if (ref) {
         const meter = ref.querySelector('.meter > i') as HTMLElement
         if (meter) {
