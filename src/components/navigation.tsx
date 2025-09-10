@@ -103,7 +103,6 @@ export default function Navigation({
   // Optimize initial load with minimal effects
   React.useEffect(() => {
     setMounted(true)
-    setCurrentPath(window.location.pathname)
   }, [])
 
   // Optimized scroll handler with opacity control
